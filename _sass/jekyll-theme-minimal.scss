@@ -231,3 +231,36 @@ footer {
     color:#444;
   }
 }
+
+
+
+
+
+
+.box-wrapper { 
+  overflow:hidden;
+}
+
+.box-wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#box-left {
+  float:left; 
+  margin-right:20px;
+  width:140px;
+}
+#box-right { 
+  overflow:hidden;
+  margin:10px;
+  min-height:170px;
+}
+
+@media screen and (max-width: 400px) {
+   #box-left { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0; 
+  }
+}
