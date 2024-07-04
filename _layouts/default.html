@@ -82,7 +82,14 @@
     <script src="{{ "/assets/js/splide.min.js" | relative_url }}"></script>
 
     <script>
-      new Splide( '.splide' ).mount();
+      var splide = new Splide( '.splide', {
+  type     : 'loop',
+  height   : '10rem',
+  focus    : 'center',
+  autoWidth: true,
+} );
+
+splide.mount();
     </script>
   </body>
 </html>
