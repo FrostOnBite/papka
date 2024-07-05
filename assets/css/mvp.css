@@ -5,6 +5,7 @@
     --border-radius: 15px;
     --button-radius: 100px;
     --button-color: #FFDD00;
+    --button-text: #1D1F1E;
     --box-shadow: 2px 2px 10px;
     --color-accent: #118bee15;
     --color-bg: #fff;
@@ -330,7 +331,7 @@ button,
 input[type="submit"] {
     background-color: var(--button-color);
     border: 2px solid var(--button-color);
-    color: var(--color-bg);
+    color: var(--button-text);
 }
 
 a em,
