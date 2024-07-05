@@ -459,6 +459,11 @@ a.circle {
   z-index: 1;
 }
 
+.video-player .plyr video {
+  object-fit: cover !important;
+  border-radius: 10px !important;
+}
+
 .text-center {
   text-align: center !important;
 }
