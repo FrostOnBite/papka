@@ -459,6 +459,11 @@ a.circle {
   margin: 0 auto;
   text-align: center;
   top: -100px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 320px;
+  width: 480px;
+  z-index: 1;
 }
 
 .text-center {
