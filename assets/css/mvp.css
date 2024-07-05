@@ -4,6 +4,7 @@
     --active-brightness: 0.85;
     --border-radius: 15px;
     --button-radius: 100px;
+    --button-color: #FFDD00;
     --box-shadow: 2px 2px 10px;
     --color-accent: #118bee15;
     --color-bg: #fff;
@@ -327,8 +328,8 @@ a b,
 a strong,
 button,
 input[type="submit"] {
-    background-color: var(--color-link);
-    border: 2px solid var(--color-link);
+    background-color: var(--button-color);
+    border: 2px solid var(--button-color);
     color: var(--color-bg);
 }
 
