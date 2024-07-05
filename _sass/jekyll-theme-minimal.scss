@@ -461,15 +461,8 @@ a.circle {
   z-index: 999;
 }
 
-
-.read-more-target,
-.read-more-trigger_opened {
-  display: none;
-}
-.read-more-state:checked ~ .read-more-wrap .read-more-target,
-.read-more-state:checked ~ .read-more-trigger_opened {
-  display: block;
-}
-.read-more-state:checked ~ .read-more-trigger_closed {
-  display: none;
+.video-box{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
