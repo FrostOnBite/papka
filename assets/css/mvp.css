@@ -1,6 +1,7 @@
 /* MVP.css v1.15 - https://github.com/andybrewer/mvp */
 
 :root {
+    --plyr-color-main: #56BBED;
     --active-brightness: 0.85;
     --border-radius: 15px;
     --button-radius: 100px;
