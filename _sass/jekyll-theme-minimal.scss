@@ -249,6 +249,16 @@ footer {
   left: -400px;
 }
 
+@media print, screen and (max-width: 480px) {
+  .dove {
+    display: none;
+  }
+
+  .leo{
+    display: none;
+  }
+}
+
 
 /* ==== GRID SYSTEM ==== */
 
