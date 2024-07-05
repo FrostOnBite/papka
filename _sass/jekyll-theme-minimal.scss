@@ -451,17 +451,13 @@ a.circle {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  top: -100px;
+  top: -80px;
   border-radius: 10px;
   overflow: hidden;
   height: 320px;
   width: 480px;
   z-index: 1;
-}
-
-.video-player .plyr video {
   object-fit: cover !important;
-  border-radius: 10px !important;
 }
 
 .text-center {
