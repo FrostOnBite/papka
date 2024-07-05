@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="{{ "/assets/css/form-reset.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/simple-grid.min?v=" | append: site.github.build_revision | relative_url }}">
 
+    <link rel="stylesheet" href="{{ "/assets/css/plyr.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/splide.min.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/splide-core.min.css?v=" | append: site.github.build_revision | relative_url }}">
-
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -249,36 +248,42 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <script src="{{ "/assets/js/plyr.polyfilled.js" | relative_url }}"></script>
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/splide.min.js" | relative_url }}"></script>
 
     <script>
       var splide = new Splide( '.splide', {
-  type     : 'loop',
-  focus    : 'center',
-  autoplay: true,
-  autoWidth: true,
-} );
+        type     : 'loop',
+        focus    : 'center',
+        autoplay: true,
+        autoWidth: true,
+      } );
 
-splide.mount();
+      splide.mount();
     </script>
 
-<script>
-$(document).ready(function() {
-  $("#toggle").click(function() {
-    var elem = $("#toggle").text();
-    if (elem == "Читать далее") {
-      //Stuff to do when btn is in the read more state
-      $("#toggle").text("Закрыть");
-      $("#moore-text").slideDown();
-    } else {
-      //Stuff to do when btn is in the read less state
-      $("#toggle").text("Читать далее");
-      $("#moore-text").slideUp();
-    }
-  });
-});
-</script>
+    <script>
+    $(document).ready(function() {
+      $("#toggle").click(function() {
+        var elem = $("#toggle").text();
+        if (elem == "Читать далее") {
+          //Stuff to do when btn is in the read more state
+          $("#toggle").text("Закрыть");
+          $("#moore-text").slideDown();
+        } else {
+          //Stuff to do when btn is in the read less state
+          $("#toggle").text("Читать далее");
+          $("#moore-text").slideUp();
+        }
+      });
+    });
+    </script>
+
+    <script>
+      const player = new Plyr('#player');
+    </script>
 
   </body>
 </html>
