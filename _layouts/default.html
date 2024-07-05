@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="{{ "/assets/css/splide.min.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/splide-core.min.css?v=" | append: site.github.build_revision | relative_url }}">
 
+    <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -49,7 +52,11 @@
       <main>
 
       <div class="video-box">
-              <iframe width="700" height="500" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <video width="400" controls>
+          <source src="mov_bbb.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML video.
+        </video>
       </div>
       {{ content }}
 
