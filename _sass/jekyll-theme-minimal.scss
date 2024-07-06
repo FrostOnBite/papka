@@ -169,7 +169,13 @@ footer {
 
 .logo{
   margin: 6% auto 20px;
-  height: 140px;
+}
+
+.logo svg {
+  max-height: 100px;
+  width: 100%;
+  margin: auto;
+  display: block;
 }
 
 .leo{
