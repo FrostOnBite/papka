@@ -524,15 +524,16 @@ a.circle {
 .container-social{
   line-height: 1.22;
 }
-#social_icons {
+.social_icons {
   padding: .5em;
   display: inline-block;
+  line-height: 1.22;
 }
 
-#social_icons ul{
+.social_icons ul{
   overflow: hidden;
 }
 
-#social_icons li{
+.social_icons li{
   display:inline-block;
   }
