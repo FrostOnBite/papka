@@ -176,6 +176,12 @@ footer {
   width: 100%;
 }
 
+@media only screen and (max-width: 960px) {
+  .logo{
+    margin: 20% auto 20px;
+  }
+}
+
 .leo{
   position: absolute;
   top: 10px;
