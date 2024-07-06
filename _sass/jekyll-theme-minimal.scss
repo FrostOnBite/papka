@@ -560,8 +560,9 @@ a.circle {
     }
   }
 
-  @media screen and (max-width: 400px) {
+
+@media screen and (min-width:650px) { /*hide mobile menu for desktop*/
   .container-mobile{
-    display: none;
+      display:none;
   }
-}
+}  
