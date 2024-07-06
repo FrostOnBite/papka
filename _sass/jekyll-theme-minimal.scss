@@ -561,7 +561,7 @@ a.circle {
   }
 
 
-@media screen and (min-width:650px) { /*hide mobile menu for desktop*/
+@media screen and (min-width: 960px) { /*hide mobile menu for desktop*/
   .container-mobile{
       display:none;
   }
