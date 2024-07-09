@@ -416,6 +416,12 @@ a.circle {
   margin: 40px auto;
 }
 
+@media screen and (min-width: 960px) { 
+  .margin-bouth{
+    margin: 40px 20%;
+  }
+}  
+
 
 .quote-hr {
   margin-top: 1rem;
